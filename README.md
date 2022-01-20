@@ -1,39 +1,35 @@
-<!--
-This is a template for datasets in the Fatiando a Terra collection.
+# Caribbean - Single-beam bathymetry
 
-When adding a new dataset, fill out the information below. Search for all
-instances of "CHANGEME" and replace with the relevant information.
+This dataset is a compilation of several single-beam bathymetry surveys of the
+Caribbean ocean displaying a wide range of tectonic activity, uneven
+distribution, and even clear systematic errors in some of the survey lines.
 
-You probably also want to edit the conda environment.yml file to give the
-environment a new name and add/remove dependencies.
+The original data file was compressed with LZMA to save space and make it
+possible to upload it to this GitHub repository (see `raw/`) since there is not
+direct download link we could use.
 
-You can delete this comment once done.
--->
-
-# Location - Data type
-
-CHANGEME: A few sentences about the dataset and a plot should go here.
-
-![CHANGEME: The alt text of the image.](preview.jpg)
+![Bathymetric depth trackline data.](preview.jpg)
 
 | | Summary |
 |--:|:--|
-| File | `CHANGEME.csv` |
-| Size | CHANGEME Mb |
-| Version | [CHANGEME](https://github.com/fatiando-data/CHANGEME/releases/latest) |
-| DOI | https://doi.org/CHANGEME |
+| File | `caribbean-bathymetry.csv.xz` |
+| Size | 7.8 Mb |
+| Version | [v1](https://github.com/fatiando-data/caribbean-bathymetry/releases/latest) |
+| DOI | https://doi.org/10.5281/zenodo.5882211 |
 | License | [CC-BY](https://creativecommons.org/licenses/by/4.0/) |
-| MD5 | `md5:CHANGEME` |
-| SHA256 | `sha256:CHANGEME` |
-| Source | CHANGEME: Citation and/or link to original data source |
-| Original license | CHANGEME: License (with link) of the original source |
-| Processing code | [`prepare.ipynb`](https://nbviewer.org/github/fatiando-data/CHANGEME/blob/main/prepare.ipynb) |
+| MD5 | `md5:a7332aa6e69c77d49d7fb54b764caa82` |
+| SHA256 | `sha256:9adaa2ead1cd354206235105489b511c4c46833b2e137a3eadc917243d16f09e` |
+| Source | [NOAA NCEI](https://ngdc.noaa.gov/mgg/geodas/trackline.html) |
+| Original license | [public domain](https://ngdc.noaa.gov/ngdcinfo/privacy.html) |
+| Processing code | [`prepare.ipynb`](https://nbviewer.org/github/fatiando-data/caribbean-bathymetry/blob/main/prepare.ipynb) |
 
 ## Changes made
 
 > These are the changes made to the original dataset.
 
-* CHANGEME: List here changes made to the original data.
+* Convert from MGD77 to a simpler compressed CSV format.
+* Retain only the survey ID, coordinates, and depth.
+* Cut the data to a slightly smaller region.
 
 ## About this repository
 
