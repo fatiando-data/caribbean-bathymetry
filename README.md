@@ -1,8 +1,8 @@
 # Caribbean - Single-beam bathymetry
 
 This dataset is a compilation of several single-beam bathymetry surveys of the
-Caribbean ocean displaying a wide range of tectonic activity, uneven
-distribution, and even clear systematic errors in some of the survey lines.
+Caribbean ocean displaying a wide range of tectonic activity and uneven
+distribution.
 
 The original data file was compressed with LZMA to save space and make it
 possible to upload it to this GitHub repository (see `raw/`) since there is not
@@ -13,12 +13,12 @@ direct download link we could use.
 | | Summary |
 |--:|:--|
 | File | `caribbean-bathymetry.csv.xz` |
-| Size | 7.8 Mb |
-| Version | [v1](https://github.com/fatiando-data/caribbean-bathymetry/releases/latest) |
-| DOI | https://doi.org/10.5281/zenodo.5882211 |
+| Size | 1.3 Mb |
+| Version | [v2](https://github.com/fatiando-data/caribbean-bathymetry/releases/latest) |
+| DOI | https://doi.org/10.5281/zenodo.10631903 |
 | License | [CC-BY](https://creativecommons.org/licenses/by/4.0/) |
-| MD5 | `md5:a7332aa6e69c77d49d7fb54b764caa82` |
-| SHA256 | `sha256:9adaa2ead1cd354206235105489b511c4c46833b2e137a3eadc917243d16f09e` |
+| MD5 | `md5:79698c447daba7c15011a5528c8fe212` |
+| SHA256 | `sha256:f90d5d34309df866321676efdea5ef4817fe71534c7190d3b495a33efd2dd20e` |
 | Source | [NOAA NCEI](https://ngdc.noaa.gov/mgg/geodas/trackline.html) |
 | Original license | [public domain](https://ngdc.noaa.gov/ngdcinfo/privacy.html) |
 | Processing code | [`prepare.ipynb`](https://nbviewer.org/github/fatiando-data/caribbean-bathymetry/blob/main/prepare.ipynb) |
@@ -27,9 +27,17 @@ direct download link we could use.
 
 > These are the changes made to the original dataset.
 
+Version 1:
+
 * Convert from MGD77 to a simpler compressed CSV format.
 * Retain only the survey ID, coordinates, and depth.
 * Cut the data to a slightly smaller region.
+
+Version 2:
+
+* Reduce the region even more to reduce the data size.
+* Remove problematic surveys that had systematic errors.
+* Remove very dense surveys to reduce data size.
 
 ## About this repository
 

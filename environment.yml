@@ -3,15 +3,16 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - python==3.9
+  - python==3.10
   - pip
   - numpy
   - jupyterlab
+  - ipykernel
   - matplotlib
   - pyproj
   # PyGMT for plotting
-  - pygmt==0.4.1
-  - gmt==6.2.0
+  - pygmt==0.11.0
+  - gmt==6.5.0
   # Fatiando
   - pooch>=1.0
-  - verde==1.6.1
+  - verde==1.8.0
